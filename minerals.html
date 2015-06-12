@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html ng-app="">
+	<head>
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+
+        <div class="container" id="main">
+            <div class="navbar navbar-fixed-top"> <!--navbar gives div navbar settings from bootstrap and n-f-t fixes it to the top. It is the full width of the page because it is "fixed" and does not behave as if it was in the container. -->
+                <div class="container">
+
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+                    <a class="navbar-brand" href="/"><img src="images/logo.png" alt="Geology Database"></a> <!-- code for the logo; alt tag is for description if the image is broken -->
+                    <div class="nav-collapse collapse navbar-responsive-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="minerals.html">Minerals</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="#">Pictures</a>
+                            </li>
+                        </ul><!-- end nav -->
+                        <form class="navbar-form pull-right">
+                            <input type="text" class="form-control" placeholder="Search This Site..." id="searchInput">
+                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </form>
+
+                    </div><!-- end nav collapse -->
+
+                </div>
+            </div> <!-- end of navbar -->
+
+
+
+
+
+
+
+<!--
+                            LIST OF MINERALS USING ANGULAR JS
+-->
+
+
+
+
+
+
+
+        <!-- footer is outside the container so that it is not cut off by the container width and is instead the width of the entire webpage. -->
+        <footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<h6>Copyright &copy; 2015 Matthew McBride</h6>
+					</div>
+
+					<div class="col-sm-4">
+						<h6>About Us</h6>
+						<p>Geology Database is a free website that provides information and photos of minerals. It was created to provide basic information and pictures of minerals in a simple, straightforward manner. If you have a mineral you want added, please contact us.</p>
+					</div>
+
+					<div class="col-sm-2">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Donate</a></li>
+						</ul>
+					</div>
+
+					<div class="col-sm-2">
+						<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h6>Coded by Matt McBride</h6>
+					</div>
+
+				</div>
+			</div> <!-- end container -->
+        </footer> <!-- end footer -->
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+
+    <!-- Angular JS -->
+    <script src="scripts/angular.js"></script>
+
+    <!-- Angular JS routing -->
+    <script src="scripts/angular-route.js"></script>
+
+	</body>
+</html>

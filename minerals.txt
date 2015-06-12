@@ -1,0 +1,47 @@
+gold = {
+    name:"Gold",
+    group:"Native Element",
+    formula:"Au",
+    hardness:"2.5-3",
+    gravity:"19.3"
+}
+
+quartz = {
+    name:"Quartz",
+    group:"Silicate",
+    formula:"SiO2",
+    hardness:"7",
+    gravity:"2.65"
+}
+
+diamond = {
+    name:"Diamond",
+    group:"Native Element",
+    formula:"C",
+    hardness:"10",
+    gravity:"3.52"
+}
+
+calcite = {
+    name:"Calcite",
+    group:"Carbonate",
+    formula:"CaCO3",
+    hardness:"3",
+    gravity:"2.71"
+}
+
+sylvite = {
+    name:"Sylvite",
+    group:"Halide",
+    formula:"KCl",
+    hardness:"2",
+    gravity:"1.99"
+}
+
+realgar = {
+    name:"Realgar",
+    group:"Sulfide",
+    formula:"AsS",
+    hardness:"1.5-2",
+    gravity:"3.48"
+}

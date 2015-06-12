@@ -1,0 +1,15 @@
+/*  Search function can target one variable, handled upon request only.
+    Main Page - Headers: mineral name; category/group; molecular formula;
+                hardness; specific gravity.
+    - Starting minerals: quartz; diamond; copper; calcite; aragonite;
+
+*/
+
+/* Mineral Page - Categories: header info from mp; (an)isotropic;
+                  pleochroism; streak; color; cleavage; luster; fracture
+                  pattern; twinning; crystal habit; crystal system;
+                  solubility; hand sample picture; thin section picture
+                  under polar and x-polar light; notable uses; notable
+                  characteristics; varieties/polymorphs;
+
+*/
