@@ -1,0 +1,23 @@
+<h2>{{ appSettings.title }}</h2>
+   Filter: <input type="text" ng-model="mineralFilter.name">
+
+   <table>
+     <tr>
+       <th ng-click="doSort('name')">Name</th>
+       <th ng-click="doSort('city')">City</th>
+       <th ng-click="doSort('orderTotal')">Order</th>
+       <th ng-click="doSort('joined')">Joined</th>
+       <th>&nbsp;</th>
+     </tr>
+     <tr ng-repeat="mineral in minerals | filter:mineralFilter | orderBy:sortBy:reverse">
+       <td>{{ mineral.name }}</td>
+       <td>{{ mineral.city }}</td>
+       <td>{{ mineral.orderTotal | currency }}</td>
+       <td>{{ mineral.joined | date }}</td>
+       <td><a href="#/orders/{{ customer._id }}">View Orders</a></td>
+     </tr>
+   </table>
+
+   <span>Total minerals: {{ minerals.length }}</span>
+<br /> <br />
+<footer>Version: {{ appSettings.version }}</footer>
