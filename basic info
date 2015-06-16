@@ -1,7 +1,7 @@
 /*  Search function can target one variable, handled upon request only.
     Main Page - Headers: mineral name; category/group; molecular formula;
                 hardness; specific gravity.
-    - Starting minerals: quartz; diamond; copper; calcite; aragonite;
+    - Starting minerals: quartz; diamond; gold; calcite; realgar;
 
 */
 

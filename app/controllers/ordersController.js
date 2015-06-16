@@ -3,21 +3,21 @@
 
 (function () {
     'use strict';
-    var ordersController = function ($scope, $log, $routeParams, customersFactory, appSettings) {
-        var customerId = $routeParams.customerId;
+    var ordersController = function ($scope, $log, $routeParams, mineralsFactory, appSettings) {
+        var mineralId = $routeParams.mineralId;
         $scope.orders = null;
-        $scope.customer = null;
+        $scope.mineral = null;
 
         function init() {
-            customersFactory.getCustomer(customerId)
+            mineralsFactory.getMineral(mineralId)
                 .error (function (data, status, headers, config) {
                     $log.log(data.error);
                 })
-                .success (function (customer) {
-                    $scope.customer = customer;
+                .success (function (mineral) {
+                    $scope.mineral = mineral;
                 });
 
-            customersFactory.getOrders(customerId)
+            mineralsFactory.getOrders(mineralId)
                 .success(function (orders) {
                     $scope.orders = orders;
                 })
@@ -30,7 +30,7 @@
         init();
     };
 
-    ordersController.$inject = ['$scope', '$log', '$routeParams', 'customersFactory', 'appSettings'];
-    angular.module('customersApp')
+    ordersController.$inject = ['$scope', '$log', '$routeParams', 'mineralsFactory', 'appSettings'];
+    angular.module('mineralsApp')
         .controller('ordersController', ordersController);
 }());

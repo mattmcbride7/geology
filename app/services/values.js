@@ -1,4 +1,4 @@
 angular.module('mineralsApp').value('appSettings', {
-    title: 'Minerals Application',
-    version: '1.0'
+    title: 'Mineral Database',
+    version: '0.1'
 });

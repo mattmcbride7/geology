@@ -11,7 +11,7 @@
                 controller: 'mineralsController',
                 templateUrl: "app/views/minerals.html"
             })
-            .when('/orders/:customerId', {
+            .when('/orders/:mineralId', {
                 controller: 'ordersController',
                 templateUrl: "app/views/orders.html"
             })
