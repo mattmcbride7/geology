@@ -9,9 +9,13 @@
         $routeProvider
             .when('/', {
                 controller: 'mineralsController',
+                templateUrl: "app/views/home.html"
+            })
+            .when('/minerals', {
+                controller: 'mineralsController',
                 templateUrl: "app/views/minerals.html"
             })
-            .when('/orders/:mineralId', {
+            .when('/minerals/:mineralId', {
                 controller: 'ordersController',
                 templateUrl: "app/views/orders.html"
             })

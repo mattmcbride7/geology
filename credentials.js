@@ -1,8 +1,8 @@
 module.exports = {
-    cookieSecret: '',
+    cookieSecret: 'a;sdigvhawer349875q-owiej,n43;2nwa;f',
     mongo: {
         dbURI: {
-            local: ''   
+            local: 'mongodb://localhost:27017/angular'
         },
         dbOptions: {
             local: {

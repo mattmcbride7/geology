@@ -11,12 +11,11 @@
        <th>&nbsp;</th>
      </tr>
      <tr ng-repeat="mineral in minerals | filter:mineralFilter | orderBy:sortBy:reverse">
-       <td>{{ mineral.name }}</td>
+       <td><a href="#/minerals/{{ mineral._id }}">{{ mineral.name }}</a></td>
        <td>{{ mineral.formula }}</td>
        <td>{{ mineral.group }}</td>
        <td>{{ mineral.hardness }}</td>
        <td>{{ mineral.gravity }}</td>
-       <td><a href="#/orders/{{ mineral._id }}">View Mineral</a></td>
      </tr>
    </table>
 
