@@ -12,6 +12,8 @@ var credentials = require('./credentials.js'),
     Customers = require('./app/models/minerals.js'),
     Orders = require('./app/models/orders.js');
 
+app.set('port', process.env.PORT || 8080);
+
 // Connect to MongoDB
 mongoose.connect(credentials.mongo.dbURI.local, credentials.mongo.dbOptions.local);
 
